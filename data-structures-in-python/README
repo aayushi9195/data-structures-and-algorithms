@@ -5,7 +5,7 @@ Tuple
 Set
 Frozen set - Immutable version of sets
 Byte array - Mutable sequence of integers in the range 0 <= x < 256.
-String - Array of bytes representing Unicode characters, immutable, no "character" type - a single char is string of len 1
+String - Array of bytes representing Unicode characters, immutable, no "character" type - a single character is a string of length 1
 
 User-defined Data Structures:
 Stack
@@ -14,7 +14,6 @@ Heap
 Linked List
 Tree
 Graph
-
 
 References:
 https://www.edureka.co/blog/data-structures-in-python/
