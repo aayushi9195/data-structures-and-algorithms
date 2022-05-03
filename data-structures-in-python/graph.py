@@ -56,7 +56,7 @@ class UnweightedGraph:
         for vertex in self.graph:
             print(vertex, " -> ", self.graph[vertex])
 
-    def bfs(self, source):
+    def bfs_iterative(self, source):
         visited = set()
         queue = deque()
         queue.append(source)
@@ -69,13 +69,13 @@ class UnweightedGraph:
                 if neighbor not in visited:
                     visited.add(neighbor)
                     queue.append(neighbor)
-        print('BFS:', ans)
+        print('BFS iterative:', ans)
 
-    def dfs(self, source):
+    def dfs_recursive(self, source):
         visited = set()
         ans = []
         self.dfs_util(source, visited, ans)
-        print('DFS:', ans)
+        print('DFS recursive:', ans)
 
     def dfs_util(self, source, visited, ans):
         visited.add(source)
@@ -83,6 +83,41 @@ class UnweightedGraph:
         for neighbor in self.graph[source]:
             if neighbor not in visited:
                 self.dfs_util(neighbor, visited, ans)
+
+    def bfs_recursive(self, source):
+        queue = deque()
+        queue.append(source)
+        visited = set()
+        visited.add(source)
+        ans = []
+        self.bfs_util(queue, visited, ans)
+        print('BFS recursive:', ans)
+
+    def bfs_util(self, queue, visited, ans):
+        if not queue:
+            return
+        curr = queue.popleft()
+        ans.append(curr)
+        for neighbor in self.graph[curr]:
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append(neighbor)
+        self.bfs_util(queue, visited, ans)
+
+    def dfs_iterative(self, source):
+        visited = set()
+        stack = deque()
+        stack.append(source)
+        ans = []
+        while stack:
+            curr = stack.pop()
+            if curr not in visited:
+                ans.append(curr)
+                visited.add(curr)
+            for node in self.graph[curr]:
+                if node not in visited:
+                    stack.append(node)
+        print('DFS iterative:', ans)
 
 
 def main():
@@ -119,8 +154,11 @@ def main():
     graph.addEdge(4, 1)
     graph.addEdge(2, 5)
     graph.print()
-    graph.bfs(2)
-    graph.dfs(2)
+
+    graph.bfs_iterative(2)
+    graph.bfs_recursive(2)
+    graph.dfs_iterative(2)
+    graph.dfs_recursive(2)
 
 
 if __name__ == "__main__":
