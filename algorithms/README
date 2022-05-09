@@ -1,31 +1,31 @@
 Arrays:
-    Binary Search
-	Sorting (Insertion, Merge, Quick)
+Binary Search
+Sorting (Insertion, Merge, Quick)
 
 Tree:
-    Pre/Post/In
-	Level-Order Traversal
+Pre/Post/In
+Level-Order Traversal
 
 Graph:
-	BFS / DFS
-	Djikstra's / Floyd Warshall
-	Bellman-Ford
-	Max-flow, min-cut (Ford Fulkerson)
-	Topological Sorting
-	Kruskal / Prim's
-	Hungarian Algorithm (Bipartite graph test)
-	Euler's Algorithm
-	Checking Cyclicity
-	Checking Connectivity
+BFS / DFS
+Djikstra's / Floyd Warshall
+Bellman-Ford
+Max-flow, min-cut (Ford Fulkerson)
+Topological Sorting
+Kruskal / Prim's
+Hungarian Algorithm (Bipartite graph test)
+Euler's Algorithm
+Checking Cyclicity
+Checking Connectivity
 
 Strings:
-    KMP
-	Rabin-Karp
-	Z
+KMP
+Rabin-Karp
+Z
 
 Misc:
-    Union Find
-	Monoqueue
-	Two/Three Pointers
-	Trie
-	Divide and Conquer
+Union Find
+Monoqueue
+Two/Three Pointers
+Trie
+Divide and Conquer
