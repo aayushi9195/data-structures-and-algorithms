@@ -10,10 +10,10 @@ Graph:
 BFS / DFS
 Djikstra's / Floyd Warshall
 Bellman-Ford
-Max-flow, min-cut (Ford Fulkerson)
+Max-flow, min-cut (Ford Fulkerson) [Optional]
 Topological Sorting
 Kruskal / Prim's
-Hungarian Algorithm (Bipartite graph test)
+Hungarian Algorithm (Bipartite graph test) [Optional]
 Euler's Algorithm
 Checking Cyclicity
 Checking Connectivity
@@ -25,7 +25,5 @@ Z
 
 Misc:
 Union Find
-Monoqueue
 Two/Three Pointers
-Trie
 Divide and Conquer
